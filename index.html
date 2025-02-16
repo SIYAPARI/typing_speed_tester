@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TYPING SPEED TESTER</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    
+</head>
+<body>
+    <!-- Popup Container -->
+    <div class="popup-overlay" id="popup">
+      <div class="popup-box">
+          <h2>Game Rules 📜</h2>
+          <p>🎮 Welcome to the game! Here are the rules:</p>
+          <ul style="text-align: left;">
+              <li> Click on the box , in order to start the game.</li>
+              <li> You have 75 seconds to finish one round of the game .</li>
+              <li> Once the game starts , it will display 5 random quotations.</li>
+              <li> Each quotation will be displayed for 15 seconds .</li>
+              <li> After 15 seconds the box where you are typing will be cleared And next quotation will be displayed</li>
+          </ul>
+          <button onclick="closePopup()">Got It!</button>
+      </div>
+    </div>
+     <!-- VARIABLE NAMES TAKEN ARE DIFFERENT IN JS AND HTML  -->
+    <div class="container">
+        <div class="heading">
+          Typing Speed Tester
+        </div>
+        <div class="header">
+          <div class="total">
+            <div class=" header_text">TOTAL CHARACTERS </div>
+            <div class="total_text"></div>
+          </div>
+          <div class="wpm">
+            <div class="header_text">WPM</div>
+            <div class="curr_wpm">100</div>
+          </div>
+          <div class="cpm">
+            <div class="header_text">CPM</div>
+            <div class="curr_cpm">100</div>
+          </div>
+          <div class="errors">
+            <div class="header_text">Errors</div>
+            <div class="curr_errors">0</div>
+          </div>
+          <div class="timer">
+            <div class="header_text">Time Left</div>
+            <div class="curr_time"></div>
+          </div>
+          <div class="accuracy">
+            <div class="header_text">% Accuracy Each Time</div>
+            <div class="curr_accuracy">100</div>
+          </div>
+        </div>
+        
+        <p>On clicking the area below , a text will be displayed , which you will have to Re-type in the area given below</p>
+        <p id="char_display"></p>
+        <div class="quote">
+          Click here to start the game.
+        </div>
+        
+        <input class="input_area" placeholder="start typing here..."></input> 
+          
+        </textarea>
+
+        <button class="show_res">SHOW RESULT</button>
+        <div class="result">
+          <br/>
+          <div class="final_errors"></div>
+          <div class="accuracy_rate"></div>
+          <div class="remark"></div>
+        </div>
+        <button class="restart_btn"></button>
+          
+        
+    </div>
+
+    <!-- link the JavaScript file here -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
