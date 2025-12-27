@@ -1,8 +1,14 @@
 # typing_speed_tester
-Mini game designed with the use of JavaScript, HTML and CSS for checking the typing speed, inspired from Geeks for Geeks website
-
-SweetAlert2 (Swal) is a modern and customizable library is used as an alternative to the default JavaScript alert() , prompt() messages by writing a function for it and then calling it whenver alert is needed to be displayed.
-
-Confetti Library is also used for Fun Animations in JavaScript. whenever result is displayed , the party booster appears.
+The Typing Speed Tester is a browser-based mini game developed using HTML, CSS, and vanilla JavaScript to evaluate a user’s typing speed and accuracy in a time-bound environment.
 
 besides this a pop up is also created in which all the rues and steps of the game are displayed at the beginning.
+FEATURES : 
+1. Fixed-Time Typing Test
+2. Dynamic Quote Generation via API
+3. Character-Level Accuracy Validation
+4. Comprehensive Final Result Summary
+6. Persistent High Score Tracking
+7. Interactive Visual Feedback
+8. Dark / Light Mode Toggle
+9. Rule-Based Onboarding Popup
+10. Event-Driven Game Logic
